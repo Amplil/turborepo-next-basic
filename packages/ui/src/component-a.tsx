@@ -2,8 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./car
 import { Badge } from "./badge"
 import { Button } from "./button"
 import { Activity, CheckCircle } from "lucide-react"
+import { ReactNode } from "react"
 
-export function ComponentA() {
+interface ComponentAProps {
+  children1?: ReactNode
+  children2?: ReactNode
+  children3?: ReactNode
+}
+
+export function ComponentA({ children1, children2, children3 }: ComponentAProps) {
   return (
     <Card>
       <CardHeader>
@@ -15,12 +22,13 @@ export function ComponentA() {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <div className="flex gap-2">
-            <Badge variant="default" className="flex items-center gap-1">
-              <CheckCircle className="h-3 w-3" />
-              正常稼働
-            </Badge>
-          </div>
+          {children1}
+        </div>
+        <div className="space-y-2">
+          {children2}
+        </div>
+        <div className="space-y-2">
+          {children3}
         </div>
       </CardContent>
     </Card>
