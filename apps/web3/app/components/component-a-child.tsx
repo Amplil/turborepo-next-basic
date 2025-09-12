@@ -6,7 +6,7 @@ export function ComponentAChild() {
     <div className="flex gap-2">
       <Badge variant="default" className="flex items-center gap-1">
         <CheckCircle className="h-3 w-3" />
-        正常稼働（工場B用の子コンポーネントa）
+        正常稼働（工場C用の子コンポーネントa）
       </Badge>
     </div>
   )

@@ -26,10 +26,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <main className="container mx-auto px-4 py-8">
-        <div className="max-w-2xl">工場B</div>
+        <div className="max-w-2xl">工場C</div>
         <div className="max-w-2xl">
           <ComponentA
-            lineName="製造ラインLB"
+            lineName="製造ラインLC"
             children1={<ComponentAChild />}
             children2={<ComponentBChild />}
             children3={<ComponentCChild />}
