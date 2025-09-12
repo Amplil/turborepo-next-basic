@@ -29,6 +29,7 @@ export default function Home() {
         <div className="max-w-2xl">工場A</div>
         <div className="max-w-2xl">
           <ComponentA
+            lineName="製造ラインLA"
             children1={<ComponentAChild />}
             children2={<ComponentBChild />}
             children3={<ComponentCChild />}

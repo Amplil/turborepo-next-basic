@@ -5,12 +5,13 @@ import { Activity, CheckCircle } from "lucide-react"
 import { ReactNode } from "react"
 
 interface ComponentAProps {
+  lineName?: string
   children1?: ReactNode
   children2?: ReactNode
   children3?: ReactNode
 }
 
-export function ComponentA({ children1, children2, children3 }: ComponentAProps) {
+export function ComponentA({ lineName, children1, children2, children3 }: ComponentAProps) {
   return (
     <Card>
       <CardHeader>
@@ -18,7 +19,7 @@ export function ComponentA({ children1, children2, children3 }: ComponentAProps)
           <Activity className="h-5 w-5 text-blue-600" />
           コンポーネントA - 生産状況監視
         </CardTitle>
-        <CardDescription>製造ライン LA</CardDescription>
+        <CardDescription>{lineName}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
